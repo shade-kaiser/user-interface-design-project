@@ -5,14 +5,48 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>craigslist</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-    <img src="Images/cl_logo.png" alt="craigslist peace logo" style="width:10%">
-
-        <div>
-            <h1>Placeholder Heading</h1>
-            <p>Placeholder Paragraph</p>
-        </div>
-
+        <header class="header">
+            <ul class="header__left">
+                <li>
+                    <div class="logo">
+                        <a href="#home"><img src="Images/cl_logo.png" alt="craigslist peace logo" class="logo__icon"></a>
+                        <a href="#home" class="header__link logo">craigslist</a>
+                    </div>
+                </li>
+                <li class="header__link">Sudbury</li>
+                <li><input type="text" placeholder="Search..." class="header__searchbar"></li>
+                <li><a href="#categories" class="header__link">Categories</a></li>
+            </ul>
+            <ul class="header__right">
+                <li class="header__link-icons">
+                    <a href="#post" class="header__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0
+                        011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                    </svg>
+                </a>
+                    <a href="#post" class="header__link">Post</a>
+                </li>
+                <li class="header__link-icons">
+                    <a href="#post" class="header__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header__icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112
+                        21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </a>
+                    </svg>                      
+                    <a href="#account" class="header__link">Account</a>
+                </li>
+            </ul>
+        </header>
+        <hr class="header__hr">
+        <main></main>
+        <footer></footer>
     </body>
 </html> 
