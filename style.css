@@ -143,11 +143,19 @@ body {
     opacity: 0.5;
 }
 
+/* Dates and Quickview Split section */
+
+.dates-quickview {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* Important Dates section */
 
 .dates {
-    width: 50%;
-    border-right: 1px solid var(--clr-line);
+    width: 768px;
+    border-right: 1px solid var(--clr-line); 
 }
 
 .dates__heading {
@@ -158,10 +166,10 @@ body {
 
 .dates__items {
     display: grid;
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     margin: 0 2rem;
-    gap: 0rem 5rem;
+    gap: 4rem 5rem;
 }
 
 .calendar {
@@ -181,7 +189,7 @@ body {
 /* Quickview section */
 
 .quickview {
-    width: 50%;
+    width: 768px;
 }
 
 .quickview__heading {
