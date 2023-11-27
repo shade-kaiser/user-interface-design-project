@@ -34,6 +34,9 @@
     padding: 0;
 }
 
+
+
+
 /* Body */
 
 body {
@@ -49,7 +52,7 @@ body {
 .header {
     display: flex;
     align-items: center;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 0;
     justify-content: space-between;
     /* border: 1px solid red; */
 }
@@ -72,7 +75,7 @@ body {
 
 .header__link {
     text-decoration: none;
-    font-size: var(--size-1xl);
+    font-size: var(--size-xl);
     color: var(--clr-main-text);
 }
 
@@ -143,25 +146,32 @@ body {
     opacity: 0.5;
 }
 
+/* Dates and Quickview Split section */
+
+.dates-quickview {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* Important Dates section */
 
 .dates {
-    width: 50%;
-    border-right: 1px solid var(--clr-line);
+    width: 768px;
+    border-right: 1px solid var(--clr-line); 
 }
 
 .dates__heading {
     font-size: var(--size-3xl);
     font-weight: 500;
-    margin: 1rem 2rem;
+    margin: 1rem 0;
 }
 
 .dates__items {
     display: grid;
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: repeat(3, 200px);
-    margin: 0 2rem;
-    gap: 0rem 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4rem 5rem;
 }
 
 .calendar {
@@ -181,20 +191,20 @@ body {
 /* Quickview section */
 
 .quickview {
-    width: 50%;
+    width: 768px;
 }
 
 .quickview__heading {
     font-size: var(--size-3xl);
     font-weight: 500;
-    margin: 1rem 2rem;
+    margin: 0 2rem;
 }
 
 .quickview__items {
     display: grid;
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 300px);
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 0 2rem 2rem;
     gap: 3rem 5rem;
 }
 
@@ -234,8 +244,9 @@ body {
 
 .footer {
     display: flex;
-    justify-content: space-around;
-    margin: 2rem 0;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .footer__heading {
@@ -254,5 +265,21 @@ body {
     gap: 0 2em;
 }
 
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+    .dates {
+        width: 640px;
+        border-right: 1px solid var(--clr-line); 
+    }
+    .quickview {
+        width: 640px;
+    }
+}
