@@ -1,4 +1,8 @@
 :root {
+    /* The formatting for this code was borrowed from this video: https://www.youtube.com/watch?v=dLDn_k8GmaU&t=1305s */
+    /* Colours are all by our own choice. Sizes, as stated in the video, are from tailwind css documentation */
+    /* These didn't modify the actual content and design choices of the site, but rather but it easier to program */
+
     /* Colours */
     --clr-main-text: #FDE7E7;
     --clr-main-text2: #afa1a1;
@@ -323,12 +327,6 @@ body {
     gap: 0 2em;
 }
 
-.container {
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .link-hover {
     display: flex;
     flex-direction: column;
@@ -375,6 +373,16 @@ body {
 
 .footer-link:hover {
     color: var(--clr-main-text2);
+}
+
+/* The formatting for the rest of this code was borrowed from this video https://www.youtube.com/watch?v=K24lUqcT0Ms */
+/* It just fits each element of class container into a set size based on the appropriate media query */
+/* These didn't modify the actual content and design choices of the site, but rather but it easier to program */
+
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 1536px) {
