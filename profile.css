@@ -124,12 +124,25 @@ body {
     opacity: 0.5;
 }
 
+.lang__label {
+    margin-right: 0.5rem;
+}
+
+.lang__select {
+    background-color: var(--clr-background);
+    font-family: 'Kanit', sans-serif;
+    color: var(--clr-main-text);
+    border: none;
+    font-size: var(--size-base);
+}
+
 /* Main */
 
 .profile {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 1rem;
 }
 
 .account {
