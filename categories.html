@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>craigslist</title>
+        <link rel="stylesheet" href="categories.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header container">
+            <ul class="header__left">
+                <li>
+                    <div class="logo">
+                        <a href="index.html"><img src="Images/cl_logo.png" alt="craigslist peace logo" class="logo__icon"></a>
+                        <a href="index.html" class="header__link logo">craigslist</a>
+                    </div>
+                </li>
+                <li class="header__link">Sudbury</li>
+                <li><input type="text" placeholder="Search..." class="header__searchbar"></li>
+                <li><a href="categories.html" class="header__link link-hover">Categories</a></li>
+            </ul>
+            <ul class="header__right">
+                <li class="header__link-icons">
+                    <a href="#lol" class="link-hover">
+                        <div class="link-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header__icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0
+                                011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                            </svg>
+                            <p class="header__link">Post</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="header__link-icons">
+                    <a href="profile.html" class="link-hover">
+                        <div class="link-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header__icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112
+                            21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>                      
+                            <p class="header__link">Account</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </header>
+
+        <hr class="header__hr">
+
+        <main class="main container">
+            <article class="main__art filters">
+                <header>
+                    <h1 class="main__art__heading">Filters</h1>
+                </header>
+                <section class="filters__sec">
+                    <div class="filter">
+                        <h2 class="filter__heading">Searches</h2>
+                        <div class="filter__indiv">
+                            <label for="apt">Search title only</label>
+                            <input type="checkbox" id="apt">
+                        </div>
+                        <div class="filter__indiv">
+                            <label for="real" class="filter__txt">Has image</label>
+                            <input type="checkbox" id="real">
+                        </div>
+                        <div class="filter__indiv">
+                            <label for="vac">Posted today</label>
+                            <input type="checkbox" id="vac">
+                        </div>
+                        <div class="filter__indiv">
+                            <label for="office">Show duplicates</label>
+                            <input type="checkbox" id="office">
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <h2 class="filter__heading">Location</h2>
+                        <div class="filter__indiv">
+                            <label for="distance">Distance</label>
+                            <input type="text" id="distance" placeholder="Kilometers" class="filter__search">
+                        </div>
+                        <div class="filter__indiv">
+                            <label for="code">Postal Code</label>
+                            <input type="text" id="code" placeholder="A1A 1A1" class="filter__search">
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <h2 class="filter__heading">Price</h2>
+                        <div class="filter__indiv">
+                            <label for="min">Minimum</label>
+                            <input type="text" id="min" placeholder="$min" class="filter__search">
+                        </div>
+                        <div class="filter__indiv">
+                            <label for="max">Maximum</label>
+                            <input type="text" id="max" placeholder="$max" class="filter__search">
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <button class="filter__btn">Clear Filters</button>
+                    </div>
+                </section>
+            </article>
+            <article class="main__art">
+                <header>
+                    <h1 class="main__art__heading">Housing</h1>
+                </header>
+                <section class="category">
+                    <div class="housing">
+                        <img src="Images/house_c1.jpg" alt="House 1" class="housing__img">
+                        <div>
+                            <p>Ramsey Lake</p>
+                            <p>$200,000</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/house_c2.jpg" alt="House 2" class="housing__img">
+                        <div>
+                            <p>Copper Cliff</p>
+                            <p>$500,000</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/house_c3.jpg" alt="House 3" class="housing__img">
+                        <div>
+                            <p>Lively</p>
+                            <p>$340,000</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/house_c4.jpg" alt="House 4" class="housing__img">
+                        <div>
+                            <p>Manitoulin</p>
+                            <p>$80,000</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/house_c5.jpg" alt="House 5" class="housing__img">
+                        <div>
+                            <p>Downtown Sudbury</p>
+                            <p>$50,000</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/house_c6.jpg" alt="House 6" class="housing__img">
+                        <div>
+                            <p>Chelmsford</p>
+                            <p>$120,000</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="main__art">
+                <header>
+                    <h1 class="main__art__heading">For Sale</h1>
+                </header>
+                <section class="category">
+                    <div class="housing">
+                        <img src="Images/sale_c1.jpg" alt="Sale 1" class="housing__img">
+                        <div>
+                            <p>Ford Mustang</p>
+                            <p>$20,000</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/sale_c2.jpg" alt="Sale 2" class="housing__img">
+                        <div>
+                            <p>Used Laptop</p>
+                            <p>$50</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/sale_c3.jpg" alt="Sale 3" class="housing__img">
+                        <div>
+                            <p>Desinger Purse</p>
+                            <p>$80</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/sale_c4.jpg" alt="Sale 4" class="housing__img">
+                        <div>
+                            <p>Rug</p>
+                            <p>$40</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/sale_c5.jpg" alt="Sale 5" class="housing__img">
+                        <div>
+                            <p>Record Player</p>
+                            <p>$120</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/sale_c6.jpg" alt="Sale 6" class="housing__img">
+                        <div>
+                            <p>Camera</p>
+                            <p>$75</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="main__art">
+                <header>
+                    <h1 class="main__art__heading">Services</h1>
+                </header>
+                <section class="category">
+                    <div class="housing">
+                        <img src="Images/service_c1.jpg" alt="Service 1" class="service__img">
+                        <div>
+                            <p>Legal consultations</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/service_c2.jpg" alt="Service 2" class="service__img">
+                        <div>
+                            <p>Computer Repair</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/service_c3.jpg" alt="Service 3" class="service__img">
+                        <div>
+                            <p>Interior Decorating</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/service_c4.jpg" alt="Service 4" class="service__img">
+                        <div>
+                            <p>Mobile Car Detailing</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/service_c5.jpg" alt="Service 5" class="service__img">
+                        <div>
+                            <p>Catering</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/service_c6.jpg" alt="Service 6" class="service__img">
+                        <div>
+                            <p>Fitness Training</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="main__art">
+                <header>
+                    <h1 class="main__art__heading">Gigs</h1>
+                </header>
+                <section class="category">
+                    <div class="housing">
+                        <img src="Images/gig1.jpg" alt="Gig 1" class="service__img">
+                        <div>
+                            <p>Research Survey</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/gig2.jpg" alt="Gig 2" class="service__img">
+                        <div>
+                            <p>Ride from Sudbury to North Bay</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/gig3.jpg" alt="Gig 3" class="service__img">
+                        <div>
+                            <p>Movers Needed</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/gig4.jpg" alt="Gig 4" class="service__img">
+                        <div>
+                            <p>Roof Work Help!</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/gig5.png" alt="Gig 5" class="service__img">
+                        <div>
+                            <p>Door Dash</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/gig6.png" alt="Gig 6" class="service__img">
+                        <div>
+                            <p>Uber</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="main__art">
+                <header>
+                    <h1 class="main__art__heading">Resumes</h1>
+                </header>
+                <section class="category">
+                    <div class="housing">
+                        <img src="Images/resume1.jpg" alt="Resume 1" class="service__img">
+                        <div>
+                            <p>Harmony Jackson</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/resume2.jpg" alt="Resume 2" class="service__img">
+                        <div>
+                            <p>Kurtis May</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/resume3.jpg" alt="Resume 3" class="service__img">
+                        <div>
+                            <p>Faye Rios</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/resume4.jpg" alt="Resume 4" class="service__img">
+                        <div>
+                            <p>Fred Hardin</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/resume5.jpg" alt="Resume 5" class="service__img">
+                        <div>
+                            <p>Iona Welsh</p>
+                        </div>
+                    </div>
+                    <div class="housing">
+                        <img src="Images/resume6.jpg" alt="Resume 6" class="service__img">
+                        <div>
+                            <p>Elias Stanton</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <hr class="footer__hr">
+
+        <footer class="footer container">
+            <div>
+                <h2 class="footer__heading">Support</h2>
+                <div class="footer__grid">
+                    <a href="#placeholder" class="footer-link">Help</a>
+                    <a href="#placeholder" class="footer-link">Privacy</a>
+                    <a href="#placeholder" class="footer-link">Safety</a>
+                    <a href="#placeholder" class="footer-link">Feedback</a>
+                </div>
+            </div>
+            <div class="footer__sec">
+                <h2 class="footer__heading">Information</h2>
+                <a href="#placeholder" class="footer-link">Terms of Use</a>
+                <a href="#placeholder" class="footer-link">About</a>
+            </div>
+            <div class="footer__sec">
+                <h2 class="footer__heading">Company</h2>
+                <a href="#placeholder" class="footer-link">craigslist App</a>
+                <a href="#placeholder" class="footer-link">craigslist is Hiring</a>
+            </div>
+        </footer>
+    </body>
+</html> 
