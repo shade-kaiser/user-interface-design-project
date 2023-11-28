@@ -124,6 +124,18 @@ body {
     opacity: 0.5;
 }
 
+.lang__label {
+    margin-right: 0.5rem;
+}
+
+.lang__select {
+    background-color: var(--clr-background);
+    font-family: 'Kanit', sans-serif;
+    color: var(--clr-main-text);
+    border: none;
+    font-size: var(--size-base);
+}
+
 /* Main */
 
 .main {
