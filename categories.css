@@ -235,6 +235,169 @@ body {
     margin-right: 1em;
 }
 
+/* Modal */
+
+.modal {
+    width: 55%;
+    border: 2px solid var(--clr-line);
+    background-color: var(--clr-background);
+    border-radius: 10px;
+    color: var(--clr-main-text);
+    margin: auto;
+}
+
+.modal::backdrop {
+    background: black;
+    opacity: 0.5;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+.modal__header__right {
+    display: flex;
+    gap: 3rem;
+}
+
+.modal__icon-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__icon {
+    width: 20px;
+}
+
+.modal__close {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--clr-main-text);
+    font-size: var(--size-3xl);
+    transition: color 0.3s;
+}
+
+.modal__close:hover {
+    color: var(--clr-main-text2);
+}
+
+.modal__img {
+    width: 400px;
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+.modal__content {
+    display: flex;
+    grid-column: 2 span;
+}
+
+.modal__heading {
+ font-weight:600;
+ font-size: var(--size-4xl);
+}
+
+.modal__price {
+    font-weight: 500;
+    font-size: var(--size-3xl);
+}
+
+.modal__desc {
+    font-weight: 400;
+    font-size: var(--size-xl);
+    padding-right: 1rem;
+}
+
+.modal__footer {
+    display: flex;
+}
+
+.modal__info {
+    margin:  0 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.info__heading {
+    font-size: var(--size-2xl);
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.info__img {
+    width: 60px;
+    border-radius: 50%;
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.info__txt {
+    font-size: var(--size-xl);
+}
+
+.info__profile {
+    display: flex;
+    align-items: center;
+}
+
+.modal__msg {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.msg__box {
+    width: 100%;
+    height: 100px;
+    padding: 0.2em;
+    background-color: var(--clr-background);
+    border: 2px solid var(--clr-line);
+    border-radius: 5px;
+    color: var(--clr-main-text);
+    font-size: var(--size-base);
+    resize: none;
+}
+
+.msg__btn {
+    margin-top: 1rem;
+    width: 6rem;
+    padding: 0.4rem;
+    font-family: inherit;
+    background-color: var(--clr-accent);
+    color: var(--clr-main-text);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.msg__btn:hover {
+    background-color: var(--clr-accent2);
+    color: var(--clr-main-text2);
+}
+
+.msg__box:focus {
+    outline: none;
+}
+
+.sale__btn {
+    background-color: var(--clr-background);
+    color: var(--clr-main-text);
+    font-family: 'Kanit', sans-serif;
+    border: none;
+    font-size: var(--size-base);
+    text-align: start;
+}
+
 /* Footer */
 
 .footer__hr {
